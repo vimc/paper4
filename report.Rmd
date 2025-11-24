@@ -1,0 +1,413 @@
+---
+title: "Report"
+author: "Katy"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning = FALSE,
+                      fig.path = "figures/",
+                      fig.ext = c("png", "pdf"),
+                      fig.height=12, fig.width=12)
+
+subregion_colours <- c("#ab84a5", "#59385c",
+                       "#f28aaa", "#b93961", "#9a133d",
+                       
+                       
+                       "#4060c8", "#1a318b",
+                       
+                       "#669d62", "#1f5b25",
+                       
+                       "firebrick1", 
+                       "yellow3",
+                       
+                       "#fe9b00"
+)
+names(subregion_colours) <- c('Middle Africa',
+                              'Northern Africa and Western Asia',
+                              'Eastern Africa',
+                              'Western Africa',
+                              'Southern Africa',
+                              
+                              'Central and Southern Asia',
+                              'Eastern and South-Eastern Asia',
+                              
+                              'Eastern and Southern Europe',
+                              'Northern and Western Europe',
+                              
+                              'Latin America and the Caribbean',
+                              
+                              'Northern America',
+                              
+                              'Oceania')
+
+vaccine_colours <- c("black", "deeppink4", "deeppink", "yellow", "dodgerblue",
+                     "dodgerblue2", "dodgerblue4", "green", "orange", "orange3", "orange2",
+                     "cyan1", "cyan4", 
+                     "mediumorchid", "firebrick1", "darkred", "firebrick2",
+                     "coral", "purple4",  "azure4", "chocolate4",
+                     "forestgreen", "seagreen") 
+
+names(vaccine_colours) <- c("COVID-19", "RCV2", "Rubella", "YF", "Cholera",
+                            "OCV1",  "OCV2" , "Typhoid", "MenA" , "MenCWYX", "MenA/ACWYX",
+                            "HepB" ,  "HepB_BD", 
+                            "HPV" , "MCV1" , "MCV2", "Measles",
+                            "JE", "PCV3", "Hib3", "Rota",
+                            "RTS,S", "R21")
+
+disease_colours <- c("black", "deeppink", "yellow", "dodgerblue",
+                     "green", "orange", "orange3", "orange2",
+                     "cyan1", "mediumorchid", "firebrick1",
+                     "coral", "purple4",  "azure4", "chocolate4",
+                     "forestgreen", "seagreen", "seagreen3")
+
+names(disease_colours) <- c("COVID-19", "Rubella", "YF", "Cholera",
+                            "Typhoid", "MenA", "MenCWYX", "Meningitis",
+                            "HepB", "HPV", "Measles",
+                            "JE", "PCV", "Hib", "Rota",
+                            "Malaria(RTS,S)", "Malaria(R21)", "Malaria")
+
+```
+
+
+# Figures 
+
+## Simple ridges {.tabset}
+
+### Standard (deaths)
+```{r simple_ridges_disease}
+p1 <- df2_mod_ave %>% filter(method == "standard", activity_type=="all") %>%
+  fun_simple_ridges(cols=disease_colours)+ coord_cartesian(xlim=c(1e-2,NA))
+p1
+```
+
+### Standard (deaths) large version
+```{r simple_ridges_disease_large}
+df2_mod_ave %>% filter(method == "standard", activity_type=="all") %>%
+  fun_simple_ridges(cols=disease_colours)+
+  theme(axis.text = element_text(size=18), axis.title = element_text(size=18))+ coord_cartesian(xlim=c(1e-2,NA))
+
+```
+
+### Standard (DALYs)
+
+```{r simple_ridges_disease_dalys}
+p2 <- df2_mod_ave %>% filter(method == "standard", activity_type=="all") %>%
+  fun_simple_ridges(outc="dalys",cols=disease_colours)
+p2
+
+```
+
+### Standard (Deaths and DALYs)
+
+```{r simple_ridges_disease_both}
+p1 + p2
+
+```
+
+
+## Density subregion {.tabset}
+
+### Standard (deaths)
+
+```{r density_subregion}
+df2_mod_ave %>% filter(method=="standard", activity_type=="all") %>%
+  fun_density_subregion()
+
+```
+
+### Standard (DALYs)
+
+```{r density_subregion_dalys}
+df2_mod_ave %>% filter(method=="standard", activity_type=="all") %>%
+  fun_density_subregion(outc="dalys")
+
+```
+
+
+## Density subregion activity {.tabset}
+
+### Standard (deaths)
+
+```{r density_subregion_activity}
+df2_mod_ave %>% filter(method=="standard", activity_type !="all") %>%
+  filter(disease != "Rubella") %>%
+  fun_density_subregion(act=TRUE)
+
+```
+
+### Standard (DALYs)
+
+```{r density_subregion_activity_dalys}
+df2_mod_ave %>% filter(method=="standard", activity_type !="all") %>%
+  filter(disease != "Rubella") %>%
+  fun_density_subregion(outc="dalys", act=TRUE)
+
+```
+
+
+## Density disease {.tabset}
+
+### Standard (deaths)
+
+```{r density_disease}
+df2_mod_ave %>% filter(method=="standard", activity_type=="all") %>%
+  plot_density_disease()
+```
+
+### Standard activity (deaths)
+
+```{r density_disease_activity}
+df2_mod_ave %>% filter(method=="standard", activity_type != "all") %>%
+  filter(!disease %in% c("MenA", "MenCWYX")) %>% 
+  plot_density_disease()
+```
+
+### Standard (DALYs)
+
+```{r density_disease_dalys}
+df2_mod_ave %>% filter(method=="standard", activity_type=="all") %>%
+  plot_density_disease(outc="dalys")
+```
+
+### Standard activity (DALYs)
+
+```{r density_disease_activity_dalys}
+df2_mod_ave %>% filter(method=="standard", activity_type != "all") %>%
+  filter(!disease %in% c("MenA", "MenCWYX")) %>% 
+  plot_density_disease(outc="dalys")
+```
+
+## Jitter {.tabset}
+
+### By dose
+```{r jitter_dose}
+tmp <- df2_mod_ave %>%
+  filter(method=="standard")%>%
+  mutate(dose_course = case_when(vaccine %in% c("OCV1", "MCV1", "Rubella") ~ "1",
+                                 vaccine %in% c("OCV2", "MCV2", "RCV2") ~ "2",
+                                 TRUE ~ "course"))
+
+
+
+tmp %>%
+  mutate(dose_course_num = dose_course) %>% mutate(dose_course_num = ifelse(dose_course=="course", "3", dose_course_num)) %>%
+  mutate(dose_course_num= as.numeric(dose_course_num)) %>%
+  filter(disease %in% c("Measles", "Rubella", "Cholera"), dose_course_num <3) %>%
+  filter(!(disease=="Rubella" & activity_type=="campaign")) %>%
+  filter(deaths_averted_rate >1e-8) %>%
+  
+  ggplot()+
+  aes(colour = dose_course, x = deaths_averted_rate*1000, y = subregion)+
+  geom_jitter(size=2, alpha=0.5)+
+  cowplot::theme_minimal_grid()+
+  labs(y = "Impact ratio",x = "Dose") +
+  scale_colour_met_d("Signac")+
+  facet_wrap(disease~., ncol=2)+
+  scale_x_log10()+
+  labs(y = "Subregion", x = "Impact ratio (deaths averted per thousand vaccinated)", colour = "Dose")
+```
+
+### HepB/ BD 
+
+```{r jitter_dose_hepb}
+df2_mod_ave %>%
+  filter(method=="standard") %>%
+  filter(disease %in% c( "HepB")) %>%
+  mutate(disease = ifelse(disease!="HepB", "Meningitis", disease)) %>%
+  group_by(vaccine,  subregion, activity_type, disease, run_id, method) %>%
+  summarise(deaths_averted_rate = mean(deaths_averted_rate, na.rm = TRUE)) %>%
+  
+  ggplot()+
+  aes(colour = vaccine, x = deaths_averted_rate*1000, y = subregion)+
+  geom_jitter(size=2, alpha=0.5)+
+  cowplot::theme_minimal_grid()+
+  scale_colour_met_d("Signac")+
+  facet_wrap(disease~., ncol=2)+
+  scale_x_log10()+
+  labs(y = "Subregion", x = "Impact ratio (deaths averted per thousand vaccinated)", colour = "Vaccine")
+```
+
+### MenA/CWYX
+
+```{r jitter_dose_men}
+df_men %>%
+  filter(method=="Cambridge") %>%
+  group_by(vaccine,  subregion, activity_type,  new_id, method) %>%
+  summarise(impact_ratio = mean(deaths_averted_rate, na.rm = TRUE)) %>%
+  
+  ggplot()+
+  aes(fill = vaccine,colour=vaccine, x = impact_ratio*1000, y = subregion)+
+  geom_violin(linewidth=1, alpha=0.5)+
+  cowplot::theme_minimal_grid()+
+  scale_fill_manual(values=MetBrewer::met.brewer("Signac",5)[c(5,3)], aesthetics = c("colour", "fill"))+
+  scale_x_log10()+
+  labs(y = "Subregion", x = "Impact ratio (deaths averted per thousand vaccinated)", colour = "Vaccine", fill="Vaccine")
+```
+
+```{r jitter_dose_men_methods, fig.width=24}
+df_men %>%
+  group_by(vaccine,  subregion, activity_type,  new_id, method) %>%
+  summarise(impact_ratio = mean(deaths_averted_rate, na.rm = TRUE)) %>%
+  
+  ggplot()+
+  aes(fill = vaccine,colour=vaccine, x = impact_ratio*1000, y = subregion)+
+  geom_violin(linewidth=1, alpha=0.5)+
+  cowplot::theme_minimal_grid()+
+  scale_fill_manual(values=MetBrewer::met.brewer("Signac",5)[c(5,3)], aesthetics = c("colour", "fill"))+
+  scale_x_log10()+
+  labs(y = "Subregion", x = "Impact ratio (deaths averted per thousand vaccinated)", colour = "Vaccine", fill="Vaccine")+
+  facet_wrap(method~.)
+```
+
+### RTS,S vs R21
+
+```{r jitter_malaria, fig.height=8}
+df2_mod_ave %>%
+  filter(method=="standard") %>%
+  filter(vaccine %in% c("RTS,S", "R21")) %>% mutate(disease = "Malaria") %>%
+  group_by(vaccine,  subregion, activity_type, disease, run_id) %>%
+  summarise(deaths_averted_rate = mean(deaths_averted_rate, na.rm = TRUE)) %>%
+  
+  ggplot()+
+  aes(colour = vaccine, x = deaths_averted_rate*1000, y = subregion)+
+  geom_jitter(size=2, alpha=0.5)+
+  cowplot::theme_minimal_grid()+
+  scale_colour_met_d("Egypt", aesthetics=c("fill", "colour"))+
+  facet_wrap(disease~., ncol=2)+
+  scale_x_log10()+
+  labs(y = "Subregion", x = "Impact ratio (deaths averted per thousand vaccinated)", colour = "Vaccine")
+```
+
+
+## Modelling group variation - internal only {.tabset}
+
+### Deaths
+
+```{r modelling_group_variation}
+df3 <- df2 %>% select(vaccine, modelling_group) %>%
+  distinct() %>%
+  group_by(vaccine) %>% mutate(mod_num = row_number())
+
+plot_modelling_group_variation(df2,df3)+facet_wrap(method~.)
+```
+
+### DALYs 
+```{r modelling_group_variation_dalys}
+plot_modelling_group_variation(df2,df3, "dalys")+facet_wrap(method~.)
+```
+
+
+### Table of mean deaths/dalys averted with 95% CIs
+```{r}
+combined %>%
+  kbl(booktabs = TRUE, col.names = c("Disease", "Mean deaths averted<br>per 1000 vaccinations", "Mean DALYS averted<br>per 1000 vaccinations"), align = "ll", escape = FALSE) %>%
+  column_spec(1, bold = TRUE, width = "3.5cm") %>%
+  column_spec(2, width = "7cm") %>%
+  column_spec(3, width = "7cm") %>%
+  row_spec(row = 0, bold = TRUE, color = "white", background = "lightblue4") %>%
+  kable_classic(html_font = "Arial") %>% #
+  kable_styling(full_width = FALSE, stripe_color = "gray47") %>% 
+  row_spec(1:nrow(combined), hline_after = TRUE)
+```
+
+
+## FVP maps by disease {.tabset}
+
+### Cholera
+```{r cholera_fvp_map, fig.height=8, fig.width=12}
+create_fvp_map(disease_name = "Cholera")
+```
+
+### Hib
+```{r hib_fvp_map, fig.height=8, fig.width=12}
+create_fvp_map(disease_name = "Hib")
+```
+
+### Malaria
+```{r malaria_fvp_map, fig.height=8, fig.width=12}
+create_fvp_map(disease_name = "Malaria")
+```
+
+### PCV
+```{r pcv_fvp_map, fig.height=8, fig.width=12}
+create_fvp_map(disease_name = "PCV")
+```
+
+### JE
+```{r je_fvp_map, fig.height=8, fig.width=12}
+create_fvp_map(disease_name = "JE")
+```
+
+### Rota
+```{r rota_fvp_map, fig.height=8, fig.width=12}
+create_fvp_map(disease_name = "Rota")
+```
+
+### Typhoid
+```{r typhoid_fvp_map, fig.height=8, fig.width=12}
+create_fvp_map(disease_name = "Typhoid")
+```
+
+### Measles
+```{r measles_fvp_map, fig.height=8, fig.width=12}
+create_fvp_map(disease_name = "Measles")
+```
+
+### HepB
+```{r hepb_fvp_map, fig.height=8, fig.width=12}
+create_fvp_map(disease_name = "HepB")
+```
+
+### COVID-19
+```{r covid19_fvp_map, fig.height=8, fig.width=12}
+create_fvp_map(disease_name = "COVID-19")
+```
+
+### Meningitis
+```{r men_fvp_map, fig.height=8, fig.width=12}
+create_fvp_map(disease_name = "Meningitis")
+```
+
+### HPV
+```{r hpv_fvp_map, fig.height=8, fig.width=12}
+create_fvp_map(disease_name = "HPV")
+```
+
+### Rubella
+```{r rubella_fvp_map, fig.height=8, fig.width=12}
+create_fvp_map(disease_name = "Rubella")
+```
+
+### YF
+```{r yf_fvp_map, fig.height=8, fig.width=12}
+create_fvp_map(disease_name = "YF")
+```
+
+## World map showing subregions for VIMC countries 
+
+```{r world_subregion_map, fig.height=8, fig.width=12}
+
+p_map <- ggplot(subregion_map_1) +
+  geom_sf_who_poly(aes(fill = ifelse(vimc117 == 1, subregion, "Not VIMC"))) + 
+  scale_fill_manual(
+    name = "Subregion",
+    values = c(subregion_colours, "Not VIMC" = "lightgrey"),
+    na.value = "grey80",
+    drop = TRUE
+  ) +
+   who_map_pipeline(no_annotation = TRUE, na_scale = FALSE, no_data_scale = FALSE) +
+    theme_minimal() +
+  theme(
+    legend.position = c(0.05, 0.05),
+    legend.justification = c("left", "bottom"),
+    legend.key.size = unit(0.5, "cm"),
+    legend.text = element_text(size = 8),
+    legend.title = element_text(size = 9),
+    plot.background = element_rect(fill = "white", colour = NA),
+    axis.text  = element_blank()  
+  )
+
+p_map
+```

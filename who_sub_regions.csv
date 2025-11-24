@@ -1,0 +1,250 @@
+choice_subregion,country_name,country,Global.Name,Region.Name,Sub.region,Intermediate.Region.Name,subregion, vimc117
+EMR D,Afghanistan,AFG,World,Asia,Southern Asia,,Central and Southern Asia,1
+AFR D,Angola,AGO,World,Africa,Sub-Saharan Africa,Middle Africa,Middle Africa,1
+EUR B,Albania,ALB,World,Europe,Southern Europe,,Eastern and Southern Europe,1
+EUR A,Andorra,AND,World,Europe,Southern Europe,,Eastern and Southern Europe,0
+EMR B,United Arab Emirates,ARE,World,Asia,Western Asia,,Northern Africa and Western Asia,0
+AMR B,Argentina,ARG,World,Americas,Latin America and the Caribbean,South America,Latin America and the Caribbean,0
+EUR B,Armenia,ARM,World,Asia,Western Asia,,Northern Africa and Western Asia,1
+AMR B,Antigua and Barbuda,ATG,World,Americas,Latin America and the Caribbean,Caribbean,Latin America and the Caribbean,0
+WPR A,Australia,AUS,World,Oceania,Australia and New Zealand,,Oceania,0
+EUR A,Austria,AUT,World,Europe,Western Europe,,Northern and Western Europe,0
+EUR B,Azerbaijan,AZE,World,Asia,Western Asia,,Northern Africa and Western Asia,1
+AFR E,Burundi,BDI,World,Africa,Sub-Saharan Africa,Eastern Africa,Eastern Africa,1
+EUR A,Belgium,BEL,World,Europe,Western Europe,,Northern and Western Europe,0
+AFR D,Benin,BEN,World,Africa,Sub-Saharan Africa,Western Africa,Western Africa,1
+AFR D,Burkina Faso,BFA,World,Africa,Sub-Saharan Africa,Western Africa,Western Africa,1
+SEAR D,Bangladesh,BGD,World,Asia,Southern Asia,,Central and Southern Asia,1
+EUR B,Bulgaria,BGR,World,Europe,Eastern Europe,,Eastern and Southern Europe,0
+EMR B,Bahrain,BHR,World,Asia,Western Asia,,Northern Africa and Western Asia,0
+AMR B,Bahamas,BHS,World,Americas,Latin America and the Caribbean,Caribbean,Latin America and the Caribbean,0
+EUR B,Bosnia and Herzegovina,BIH,World,Europe,Southern Europe,,Eastern and Southern Europe,1
+EUR C,Belarus,BLR,World,Europe,Eastern Europe,,Eastern and Southern Europe,1
+AMR B,Belize,BLZ,World,Americas,Latin America and the Caribbean,Central America,Latin America and the Caribbean,1
+AMR D,Bolivia (Plurinational State of),BOL,World,Americas,Latin America and the Caribbean,South America,Latin America and the Caribbean,1
+AMR B,Brazil,BRA,World,Americas,Latin America and the Caribbean,South America,Latin America and the Caribbean,0
+AMR B,Barbados,BRB,World,Americas,Latin America and the Caribbean,Caribbean,Latin America and the Caribbean,0
+WPR A,Brunei Darussalam,BRN,World,Asia,South-eastern Asia,,Eastern and South-Eastern Asia,0
+SEAR D,Bhutan,BTN,World,Asia,Southern Asia,,Central and Southern Asia,1
+AFR E,Botswana,BWA,World,Africa,Sub-Saharan Africa,Southern Africa,Southern Africa,0
+AFR E,Central African Republic,CAF,World,Africa,Sub-Saharan Africa,Middle Africa,Middle Africa,1
+AMR A,Canada,CAN,World,Americas,Northern America,,Northern America,0
+EUR A,Switzerland,CHE,World,Europe,Western Europe,,Northern and Western Europe,0
+AMR B,Chile,CHL,World,Americas,Latin America and the Caribbean,South America,Latin America and the Caribbean,0
+WPR B,China,CHN,World,Asia,Eastern Asia,,Eastern and South-Eastern Asia,1
+AFR E,Cote d'Ivoire,CIV,World,Africa,Sub-Saharan Africa,Western Africa,Western Africa,1
+AFR D,Cameroon,CMR,World,Africa,Sub-Saharan Africa,Middle Africa,Middle Africa,1
+AFR E,Democratic Republic of the Congo,COD,World,Africa,Sub-Saharan Africa,Middle Africa,Middle Africa,1
+AFR E,Congo,COG,World,Africa,Sub-Saharan Africa,Middle Africa,Middle Africa,1
+WPR B,Cook Islands,COK,World,Oceania,Polynesia,,Oceania,0
+AMR B,Colombia,COL,World,Americas,Latin America and the Caribbean,South America,Latin America and the Caribbean,1
+AFR D,Comoros,COM,World,Africa,Sub-Saharan Africa,Eastern Africa,Eastern Africa,1
+AFR D,Cape Verde,CPV,World,Africa,Sub-Saharan Africa,Western Africa,Western Africa,1
+AMR B,Costa Rica,CRI,World,Americas,Latin America and the Caribbean,Central America,Latin America and the Caribbean,0
+AMR A,Cuba,CUB,World,Americas,Latin America and the Caribbean,Caribbean,Latin America and the Caribbean,1
+EUR A,Cyprus,CYP,World,Asia,Western Asia,,Northern Africa and Western Asia,0
+EUR A,Czech Republic,CZE,World,Europe,Eastern Europe,,Eastern and Southern Europe,0
+EUR A,Germany,DEU,World,Europe,Western Europe,,Northern and Western Europe,0
+EMR D,Djibouti,DJI,World,Africa,Sub-Saharan Africa,Eastern Africa,Eastern Africa,1
+AMR B,Dominica,DMA,World,Americas,Latin America and the Caribbean,Caribbean,Latin America and the Caribbean,1
+EUR A,Denmark,DNK,World,Europe,Northern Europe,,Northern and Western Europe,0
+AMR B,Dominican Republic,DOM,World,Americas,Latin America and the Caribbean,Caribbean,Latin America and the Caribbean,0
+AFR D,Algeria,DZA,World,Africa,Northern Africa,,Northern Africa and Western Asia,1
+AMR D,Ecuador,ECU,World,Americas,Latin America and the Caribbean,South America,Latin America and the Caribbean,1
+EMR D,Egypt,EGY,World,Africa,Northern Africa,,Northern Africa and Western Asia,1
+AFR E,Eritrea,ERI,World,Africa,Sub-Saharan Africa,Eastern Africa,Eastern Africa,1
+EUR A,Spain,ESP,World,Europe,Southern Europe,,Eastern and Southern Europe,0
+EUR C,Estonia,EST,World,Europe,Northern Europe,,Northern and Western Europe,0
+AFR E,Ethiopia,ETH,World,Africa,Sub-Saharan Africa,Eastern Africa,Eastern Africa,1
+EUR A,Finland,FIN,World,Europe,Northern Europe,,Northern and Western Europe,0
+WPR B,Fiji,FJI,World,Oceania,Melanesia,,Oceania,1
+EUR A,France,FRA,World,Europe,Western Europe,,Northern and Western Europe,0
+WPR B,Micronesia (Federated States of),FSM,World,Oceania,Micronesia,,Oceania,1
+AFR D,Gabon,GAB,World,Africa,Sub-Saharan Africa,Middle Africa,Middle Africa,0
+EUR A,United Kingdom,GBR,World,Europe,Northern Europe,,Northern and Western Europe,0
+EUR B,Georgia,GEO,World,Asia,Western Asia,,Northern Africa and Western Asia,1
+AFR D,Ghana,GHA,World,Africa,Sub-Saharan Africa,Western Africa,Western Africa,1
+AFR D,Guinea,GIN,World,Africa,Sub-Saharan Africa,Western Africa,Western Africa,1
+AFR D,Gambia,GMB,World,Africa,Sub-Saharan Africa,Western Africa,Western Africa,1
+AFR D,Guinea-Bissau,GNB,World,Africa,Sub-Saharan Africa,Western Africa,Western Africa,1
+AFR D,Equatorial Guinea,GNQ,World,Africa,Sub-Saharan Africa,Middle Africa,Middle Africa,0
+EUR A,Greece,GRC,World,Europe,Southern Europe,,Eastern and Southern Europe,0
+AMR B,Grenada,GRD,World,Americas,Latin America and the Caribbean,Caribbean,Latin America and the Caribbean,1
+AMR D,Guatemala,GTM,World,Americas,Latin America and the Caribbean,Central America,Latin America and the Caribbean,1
+AMR B,Guyana,GUY,World,Americas,Latin America and the Caribbean,South America,Latin America and the Caribbean,1
+AMR B,Honduras,HND,World,Americas,Latin America and the Caribbean,Central America,Latin America and the Caribbean,1
+EUR A,Croatia,HRV,World,Europe,Southern Europe,,Eastern and Southern Europe,0
+AMR D,Haiti,HTI,World,Americas,Latin America and the Caribbean,Caribbean,Latin America and the Caribbean,1
+EUR C,Hungary,HUN,World,Europe,Eastern Europe,,Eastern and Southern Europe,0
+SEAR B,Indonesia,IDN,World,Asia,South-eastern Asia,,Eastern and South-Eastern Asia,1
+SEAR D,India,IND,World,Asia,Southern Asia,,Central and Southern Asia,1
+EUR A,Ireland,IRL,World,Europe,Northern Europe,,Northern and Western Europe,0
+EMR B,Iran (Islamic Republic of),IRN,World,Asia,Southern Asia,,Central and Southern Asia,1
+EMR D,Iraq,IRQ,World,Asia,Western Asia,,Northern Africa and Western Asia,1
+EUR A,Iceland,ISL,World,Europe,Northern Europe,,Northern and Western Europe,0
+EUR A,Israel,ISR,World,Asia,Western Asia,,Northern Africa and Western Asia,0
+EUR A,Italy,ITA,World,Europe,Southern Europe,,Eastern and Southern Europe,0
+AMR B,Jamaica,JAM,World,Americas,Latin America and the Caribbean,Caribbean,Latin America and the Caribbean,1
+EMR B,Jordan,JOR,World,Asia,Western Asia,,Northern Africa and Western Asia,1
+WPR A,Japan,JPN,World,Asia,Eastern Asia,,Eastern and South-Eastern Asia,0
+EUR C,Kazakhstan,KAZ,World,Asia,Central Asia,,Central and Southern Asia,0
+AFR E,Kenya,KEN,World,Africa,Sub-Saharan Africa,Eastern Africa,Eastern Africa,1
+EUR B,Kyrgyzstan,KGZ,World,Asia,Central Asia,,Central and Southern Asia,1
+WPR B,Cambodia,KHM,World,Asia,South-eastern Asia,,Eastern and South-Eastern Asia,1
+WPR B,Kiribati,KIR,World,Oceania,Micronesia,,Oceania,1
+AMR B,Saint Kitts and Nevis,KNA,World,Americas,Latin America and the Caribbean,Caribbean,Latin America and the Caribbean,0
+WPR B,Republic of Korea,KOR,World,Asia,Eastern Asia,,Eastern and South-Eastern Asia,0
+EMR B,Kuwait,KWT,World,Asia,Western Asia,,Northern Africa and Western Asia,0
+WPR B,Lao People's Democratic Republic,LAO,World,Asia,South-eastern Asia,,Eastern and South-Eastern Asia,1
+EMR B,Lebanon,LBN,World,Asia,Western Asia,,Northern Africa and Western Asia,0
+AFR D,Liberia,LBR,World,Africa,Sub-Saharan Africa,Western Africa,Western Africa,1
+EMR B,Libyan Arab Jamahiriya,LBY,World,Africa,Northern Africa,,Northern Africa and Western Asia,1
+AMR B,Saint Lucia,LCA,World,Americas,Latin America and the Caribbean,Caribbean,Latin America and the Caribbean,1
+SEAR B,Sri Lanka,LKA,World,Asia,Southern Asia,,Central and Southern Asia,1
+AFR E,Lesotho,LSO,World,Africa,Sub-Saharan Africa,Southern Africa,Southern Africa,1
+EUR C,Lithuania,LTU,World,Europe,Northern Europe,,Northern and Western Europe,0
+EUR A,Luxembourg,LUX,World,Europe,Western Europe,,Northern and Western Europe,0
+EUR C,Latvia,LVA,World,Europe,Northern Europe,,Northern and Western Europe,0
+EMR D,Morocco,MAR,World,Africa,Northern Africa,,Northern Africa and Western Asia,1
+EUR A,Monaco,MCO,World,Europe,Western Europe,,Northern and Western Europe,0
+EUR C,Republic of Moldova,MDA,World,Europe,Eastern Europe,,Eastern and Southern Europe,1
+AFR D,Madagascar,MDG,World,Africa,Sub-Saharan Africa,Eastern Africa,Eastern Africa,1
+SEAR D,Maldives,MDV,World,Asia,Southern Asia,,Central and Southern Asia,1
+AMR B,Mexico,MEX,World,Americas,Latin America and the Caribbean,Central America,Latin America and the Caribbean,0
+WPR B,Marshall Islands,MHL,World,Oceania,Micronesia,,Oceania,1
+EUR B,The Former Yugoslav Republic of Macedonia,MKD,World,Europe,Southern Europe,,Eastern and Southern Europe,1
+AFR D,Mali,MLI,World,Africa,Sub-Saharan Africa,Western Africa,Western Africa,1
+EUR A,Malta,MLT,World,Europe,Southern Europe,,Eastern and Southern Europe,0
+SEAR D,Myanmar,MMR,World,Asia,South-eastern Asia,,Eastern and South-Eastern Asia,1
+EUR B,Montenegro,MNE,World,Europe,Southern Europe,,Eastern and Southern Europe,0
+WPR B,Mongolia,MNG,World,Asia,Eastern Asia,,Eastern and South-Eastern Asia,1
+AFR E,Mozambique,MOZ,World,Africa,Sub-Saharan Africa,Eastern Africa,Eastern Africa,1
+AFR D,Mauritania,MRT,World,Africa,Sub-Saharan Africa,Western Africa,Western Africa,1
+AFR D,Mauritius,MUS,World,Africa,Sub-Saharan Africa,Eastern Africa,Eastern Africa,0
+AFR E,Malawi,MWI,World,Africa,Sub-Saharan Africa,Eastern Africa,Eastern Africa,1
+WPR B,Malaysia,MYS,World,Asia,South-eastern Asia,,Eastern and South-Eastern Asia,0
+AFR E,Namibia,NAM,World,Africa,Sub-Saharan Africa,Southern Africa,Southern Africa,1
+AFR D,Niger,NER,World,Africa,Sub-Saharan Africa,Western Africa,Western Africa,1
+AFR D,Nigeria,NGA,World,Africa,Sub-Saharan Africa,Western Africa,Western Africa,1
+AMR D,Nicaragua,NIC,World,Americas,Latin America and the Caribbean,Central America,Latin America and the Caribbean,1
+WPR B,Niue,NIU,World,Oceania,Polynesia,,Oceania,0
+EUR A,Netherlands,NLD,World,Europe,Western Europe,,Northern and Western Europe,0
+EUR A,Norway,NOR,World,Europe,Northern Europe,,Northern and Western Europe,0
+SEAR D,Nepal,NPL,World,Asia,Southern Asia,,Central and Southern Asia,1
+WPR B,Nauru,NRU,World,Oceania,Micronesia,,Oceania,0
+WPR A,New Zealand,NZL,World,Oceania,Australia and New Zealand,,Oceania,0
+EMR B,Oman,OMN,World,Asia,Western Asia,,Northern Africa and Western Asia,0
+EMR D,Pakistan,PAK,World,Asia,Southern Asia,,Central and Southern Asia,1
+AMR B,Panama,PAN,World,Americas,Latin America and the Caribbean,Central America,Latin America and the Caribbean,0
+AMR D,Peru,PER,World,Americas,Latin America and the Caribbean,South America,Latin America and the Caribbean,1
+WPR B,Philippines,PHL,World,Asia,South-eastern Asia,,Eastern and South-Eastern Asia,1
+WPR B,Palau,PLW,World,Oceania,Micronesia,,Oceania,0
+WPR B,Papua New Guinea,PNG,World,Oceania,Melanesia,,Oceania,1
+EUR B,Poland,POL,World,Europe,Eastern Europe,,Eastern and Southern Europe,0
+SEAR D,Democratic People's Republic of Korea,PRK,World,Asia,Eastern Asia,,Eastern and South-Eastern Asia,1
+EUR A,Portugal,PRT,World,Europe,Southern Europe,,Eastern and Southern Europe,0
+AMR B,Paraguay,PRY,World,Americas,Latin America and the Caribbean,South America,Latin America and the Caribbean,1
+EMR B,Qatar,QAT,World,Asia,Western Asia,,Northern Africa and Western Asia,0
+EUR B,Romania,ROU,World,Europe,Eastern Europe,,Eastern and Southern Europe,0
+EUR C,Russian Federation,RUS,World,Europe,Eastern Europe,,Eastern and Southern Europe,0
+AFR E,Rwanda,RWA,World,Africa,Sub-Saharan Africa,Eastern Africa,Eastern Africa,1
+EMR B,Saudi Arabia,SAU,World,Asia,Western Asia,,Northern Africa and Western Asia,0
+EMR D,Sudan,SDN,World,Africa,Northern Africa,,Northern Africa and Western Asia,1
+AFR D,Senegal,SEN,World,Africa,Sub-Saharan Africa,Western Africa,Western Africa,1
+WPR A,Singapore,SGP,World,Asia,South-eastern Asia,,Eastern and South-Eastern Asia,0
+WPR B,Solomon Islands,SLB,World,Oceania,Melanesia,,Oceania,1
+AFR D,Sierra Leone,SLE,World,Africa,Sub-Saharan Africa,Western Africa,Western Africa,1
+AMR B,El Salvador,SLV,World,Americas,Latin America and the Caribbean,Central America,Latin America and the Caribbean,1
+EUR A,San Marino,SMR,World,Europe,Southern Europe,,Eastern and Southern Europe,0
+EMR D,Somalia,SOM,World,Africa,Sub-Saharan Africa,Eastern Africa,Eastern Africa,1
+EUR B,Serbia,SRB,World,Europe,Southern Europe,,Eastern and Southern Europe,1
+EMR D,South Sudan,SSD,World,Africa,Sub-Saharan Africa,Eastern Africa,Eastern Africa,1
+AFR D,Sao Tome and Principe,STP,World,Africa,Sub-Saharan Africa,Middle Africa,Middle Africa,1
+AMR B,Suriname,SUR,World,Americas,Latin America and the Caribbean,South America,Latin America and the Caribbean,0
+EUR B,Slovakia,SVK,World,Europe,Eastern Europe,,Eastern and Southern Europe,0
+EUR A,Slovenia,SVN,World,Europe,Southern Europe,,Eastern and Southern Europe,0
+EUR A,Sweden,SWE,World,Europe,Northern Europe,,Northern and Western Europe,0
+AFR E,Swaziland,SWZ,World,Africa,Sub-Saharan Africa,Southern Africa,Southern Africa,1
+AFR D,Seychelles,SYC,World,Africa,Sub-Saharan Africa,Eastern Africa,Eastern Africa,0
+EMR B,Syrian Arab Republic,SYR,World,Asia,Western Asia,,Northern Africa and Western Asia,1
+AFR D,Chad,TCD,World,Africa,Sub-Saharan Africa,Middle Africa,Middle Africa,1
+AFR D,Togo,TGO,World,Africa,Sub-Saharan Africa,Western Africa,Western Africa,1
+SEAR B,Thailand,THA,World,Asia,South-eastern Asia,,Eastern and South-Eastern Asia,1
+EUR B,Tajikistan,TJK,World,Asia,Central Asia,,Central and Southern Asia,1
+EUR B,Turkmenistan,TKM,World,Asia,Central Asia,,Central and Southern Asia,1
+SEAR D,Timor-Leste,TLS,World,Asia,South-eastern Asia,,Eastern and South-Eastern Asia,1
+WPR B,Tonga,TON,World,Oceania,Polynesia,,Oceania,1
+AMR B,Trinidad and Tobago,TTO,World,Americas,Latin America and the Caribbean,Caribbean,Latin America and the Caribbean,0
+EMR B,Tunisia,TUN,World,Africa,Northern Africa,,Northern Africa and Western Asia,1
+EUR B,Turkey,TUR,World,Asia,Western Asia,,Northern Africa and Western Asia,0
+WPR B,Tuvalu,TUV,World,Oceania,Polynesia,,Oceania,1
+AFR E,United Republic of Tanzania,TZA,World,Africa,Sub-Saharan Africa,Eastern Africa,Eastern Africa,1
+AFR E,Uganda,UGA,World,Africa,Sub-Saharan Africa,Eastern Africa,Eastern Africa,1
+EUR C,Ukraine,UKR,World,Europe,Eastern Europe,,Eastern and Southern Europe,1
+AMR B,Uruguay,URY,World,Americas,Latin America and the Caribbean,South America,Latin America and the Caribbean,0
+AMR A,United States of America,USA,World,Americas,Northern America,,Northern America,0
+EUR B,Uzbekistan,UZB,World,Asia,Central Asia,,Central and Southern Asia,1
+AMR B,Saint Vincent and the Grenadines,VCT,World,Americas,Latin America and the Caribbean,Caribbean,Latin America and the Caribbean,1
+AMR B,Venezuela (Bolivarian Republic of),VEN,World,Americas,Latin America and the Caribbean,South America,Latin America and the Caribbean,0
+WPR B,Viet Nam,VNM,World,Asia,South-eastern Asia,,Eastern and South-Eastern Asia,1
+WPR B,Vanuatu,VUT,World,Oceania,Melanesia,,Oceania,1
+WPR B,Samoa,WSM,World,Oceania,Polynesia,,Oceania,1
+EMR D,Yemen,YEM,World,Asia,Western Asia,,Northern Africa and Western Asia,1
+AFR E,South Africa,ZAF,World,Africa,Sub-Saharan Africa,Southern Africa,Southern Africa,1
+AFR E,Zambia,ZMB,World,Africa,Sub-Saharan Africa,Eastern Africa,Eastern Africa,1
+AFR E,Zimbabwe,ZWE,World,Africa,Sub-Saharan Africa,Eastern Africa,Eastern Africa,1
+NA,NA,ESH,World,Africa,Northern Africa,,Northern Africa and Western Asia,0
+NA,NA,IOT,World,Africa,Sub-Saharan Africa,Eastern Africa,Eastern Africa,0
+NA,NA,ATF,World,Africa,Sub-Saharan Africa,Eastern Africa,Eastern Africa,0
+NA,NA,MYT,World,Africa,Sub-Saharan Africa,Eastern Africa,Eastern Africa,0
+NA,NA,REU,World,Africa,Sub-Saharan Africa,Eastern Africa,Eastern Africa,0
+NA,NA,SHN,World,Africa,Sub-Saharan Africa,Western Africa,Western Africa,0
+NA,NA,AIA,World,Americas,Latin America and the Caribbean,Caribbean,Latin America and the Caribbean,0
+NA,NA,ABW,World,Americas,Latin America and the Caribbean,Caribbean,Latin America and the Caribbean,0
+NA,NA,BES,World,Americas,Latin America and the Caribbean,Caribbean,Latin America and the Caribbean,0
+NA,NA,VGB,World,Americas,Latin America and the Caribbean,Caribbean,Latin America and the Caribbean,0
+NA,NA,CYM,World,Americas,Latin America and the Caribbean,Caribbean,Latin America and the Caribbean,0
+NA,NA,CUW,World,Americas,Latin America and the Caribbean,Caribbean,Latin America and the Caribbean,0
+NA,NA,GLP,World,Americas,Latin America and the Caribbean,Caribbean,Latin America and the Caribbean,0
+NA,NA,MTQ,World,Americas,Latin America and the Caribbean,Caribbean,Latin America and the Caribbean,0
+NA,NA,MSR,World,Americas,Latin America and the Caribbean,Caribbean,Latin America and the Caribbean,0
+NA,NA,PRI,World,Americas,Latin America and the Caribbean,Caribbean,Latin America and the Caribbean,0
+NA,NA,BLM,World,Americas,Latin America and the Caribbean,Caribbean,Latin America and the Caribbean,0
+NA,NA,MAF,World,Americas,Latin America and the Caribbean,Caribbean,Latin America and the Caribbean,0
+NA,NA,SXM,World,Americas,Latin America and the Caribbean,Caribbean,Latin America and the Caribbean,0
+NA,NA,TCA,World,Americas,Latin America and the Caribbean,Caribbean,Latin America and the Caribbean,0
+NA,NA,VIR,World,Americas,Latin America and the Caribbean,Caribbean,Latin America and the Caribbean,0
+NA,NA,BVT,World,Americas,Latin America and the Caribbean,South America,Latin America and the Caribbean,0
+NA,NA,FLK,World,Americas,Latin America and the Caribbean,South America,Latin America and the Caribbean,0
+NA,NA,GUF,World,Americas,Latin America and the Caribbean,South America,Latin America and the Caribbean,0
+NA,NA,SGS,World,Americas,Latin America and the Caribbean,South America,Latin America and the Caribbean,0
+NA,NA,BMU,World,Americas,Northern America,,Northern America,0
+NA,NA,GRL,World,Americas,Northern America,,Northern America,0
+NA,NA,SPM,World,Americas,Northern America,,Northern America,0
+NA,NA,ATA,World,,,,,0
+NA,NA,HKG,World,Asia,Eastern Asia,,Eastern and South-Eastern Asia,0
+NA,NA,MAC,World,Asia,Eastern Asia,,Eastern and South-Eastern Asia,0
+NA,Palestine,PSE,World,Asia,Western Asia,,Northern Africa and Western Asia,1
+NA,NA,ALA,World,Europe,Northern Europe,,Northern and Western Europe,0
+NA,NA,FRO,World,Europe,Northern Europe,,Northern and Western Europe,0
+NA,NA,GGY,World,Europe,Northern Europe,,Northern and Western Europe,0
+NA,NA,IMN,World,Europe,Northern Europe,,Northern and Western Europe,0
+NA,NA,JEY,World,Europe,Northern Europe,,Northern and Western Europe,0
+NA,NA,SJM,World,Europe,Northern Europe,,Northern and Western Europe,0
+NA,NA,GIB,World,Europe,Southern Europe,,Eastern and Southern Europe,0
+NA,NA,VAT,World,Europe,Southern Europe,,Eastern and Southern Europe,0
+NA,NA,LIE,World,Europe,Western Europe,,Northern and Western Europe,0
+NA,NA,CXR,World,Oceania,Australia and New Zealand,,Oceania,0
+NA,NA,CCK,World,Oceania,Australia and New Zealand,,Oceania,0
+NA,NA,HMD,World,Oceania,Australia and New Zealand,,Oceania,0
+NA,NA,NFK,World,Oceania,Australia and New Zealand,,Oceania,0
+NA,NA,NCL,World,Oceania,Melanesia,,Oceania,0
+NA,NA,GUM,World,Oceania,Micronesia,,Oceania,0
+NA,NA,MNP,World,Oceania,Micronesia,,Oceania,0
+NA,NA,UMI,World,Oceania,Micronesia,,Oceania,0
+NA,NA,ASM,World,Oceania,Polynesia,,Oceania,0
+NA,NA,PYF,World,Oceania,Polynesia,,Oceania,0
+NA,NA,PCN,World,Oceania,Polynesia,,Oceania,0
+NA,NA,TKL,World,Oceania,Polynesia,,Oceania,0
+NA,NA,WLF,World,Oceania,Polynesia,,Oceania,0
+EUR B,Kosovo,XK,World,Europe,Southern Europe,,Eastern and Southern Europe,1

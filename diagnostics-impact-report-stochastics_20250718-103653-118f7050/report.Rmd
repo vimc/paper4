@@ -1,0 +1,53 @@
+---
+title: "Impact diagnostic report - stochastics"
+author: "Xiang"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, out.width = "100%", message = FALSE, warning = FALSE)
+options(dplyr.summarise.inform = FALSE)
+```
+
+```{r load data}
+dat <- transformed_data$impact
+stats <- transformed_data$summary
+disease <- stats$disease[1L]
+model <- stats$modelling_group[1L]
+```
+## Introduction
+This is report processes stochastic estimates for `r disease` provided by `r model`. The specific focus of this report is impact ratios, or health impact per dose/course of vaccination.
+
+## Method {.tabset}
+Impact by year of vaccination (YoV) is the focus of this report. By default, impact ratios are calculated for vaccination window 2000-2030. Cholera is an exception, as projected campaigns extend to year 2040.
+
+### Standard VIMC ratios
+Standard VIMC impact ratios are stratified by vaccine‐delivery and, by default, encompass all vaccinations administered between 2000 and 2030. This report also derives disease level impact ratio, which is the weighted average of vaccine-delivery impact ratios accounting for FVPs.
+
+### Cohort approach
+We also estimate impact ratios with a cohort approach. Specifically, we focus on any vaccinations, routine or campaign, achieved for cohorts born between 2000 and 2030.
+
+## Summary Statistics {.tabset}
+First of all, we present summary statistics.
+
+### Cases
+```{r cases}
+DT::datatable(stats[grepl("case", stats$outcome), ] %>% select(-disease, -modelling_group), caption = "Cases averted ratio",
+                  rownames = FALSE, filter = "top", class = 'cell-border stripe') 
+```
+### Deaths
+```{r deaths}
+DT::datatable(stats[grepl("death", stats$outcome), ] %>% select(-disease, -modelling_group), caption = "Deaths averted ratio",
+                  rownames = FALSE, filter = "top", class = 'cell-border stripe') 
+```
+### YLL
+```{r yll}
+DT::datatable(stats[grepl("yll", stats$outcome), ] %>% select(-disease, -modelling_group), caption = "YLL averted ratio",
+                  rownames = FALSE, filter = "top", class = 'cell-border stripe') 
+```
+### DALYs
+```{r dalys}
+DT::datatable(stats[grepl("daly", stats$outcome), ] %>% select(-disease, -modelling_group), caption = "DALYs averted ratio",
+                  rownames = FALSE, filter = "top", class = 'cell-border stripe') 
+```
